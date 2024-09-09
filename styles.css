@@ -14,24 +14,9 @@ html {
   scroll-padding-top: 10vh!important;
 }
 /*Site Gutter Width*/
-/*Icon in Logo, Delete*/
-.header-title-text {
-  font-weight: var(--button-weight);
-}
-.header-title-text a:before {
-  position: relative;
-  color: var(--accent);
-  content: "⏺" !important;
-  line-height: 0!important;
-  top: 5px;
-  font-size: 35px;
-  padding-right: 5px!important;
-}
-@media screen and (max-width: 767px) {
-  .header-title-text a:before {
-    bottom: -4px !important;
-    font-size: 33px;
-  }
+/*Site Background Color*/
+body {
+  background-color: var(--body-background) !important;
 }
 .sqs-gallery .margin-wrapper {
   margin-bottom: 0px!important;
