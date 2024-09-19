@@ -1,4 +1,4 @@
-/*Quantum CSS — Updated 09/08/2024*/
+/*Quantum CSS — Updated 09/18/2024*/
 @fe-block-height:25.8px; 
 
 /*Borders*/
@@ -22,11 +22,43 @@ scroll-padding-top: 10vh!important;}
 body{background-color:var(--body-background)!important;}
   
 //---LOGO GRID---//
-.sqs-gallery{  
-.margin-wrapper{
-margin-bottom:0px!important;}
-img{transform:scale(.7);
-@media screen and (max-width:800px){transform:scale(.55)}}}
+/*Grid Slide*/
+.sqs-gallery-aspect-ratio-widescreen.sqs-gallery-block-grid .slide {
+padding:30px 0px;
+box-shadow: inset 0 0 0 0.5px var(--tweak-line-block-line-color)!important;
+transition:var(--trans)!important;}
+
+/*Gallery Logo*/
+.sqs-gallery-aspect-ratio-widescreen.sqs-gallery-block-grid .sqs-gallery img{ transform:scale(.4)!important;
+@media screen and (max-width:767px){
+transform:scale(1)!important;
+max-width:70px;
+object-fit:contain;}}
+
+/*Grid Outline*/
+.sqs-gallery-aspect-ratio-widescreen.sqs-gallery-block-grid{
+box-shadow: 0 0 0 0.5px var(--tweak-line-block-line-color)!important;}
+
+/*Mobile Grid*/
+@media screen and (max-width:767px){
+.sqs-gallery-aspect-ratio-widescreen.slide.sqs-gallery-design-grid-slide{
+width:33.333%!important;}
+  
+/*Image Centering*/
+img{left:unset!important;}
+
+/*Grid Item Spacing*/
+.sqs-gallery-aspect-ratio-widescreen.sqs-gallery-block-grid .slide .margin-wrapper a.image-slide-anchor{
+padding:20px 0px!important;
+margin:0px!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;}
+
+/*Mobile Image Placement*/
+.sqs-gallery-aspect-ratio-widescreen.thumb-image{
+top:unset!important;
+left:unset!important;}}
 
 
 //---TYPOGRAPHY---//
@@ -289,38 +321,76 @@ text-decoration-line:none;}
 
 
 //---MOBILE NAVIGATION---//
-@media screen and (max-width:800px){
-/*Remove Shrink Effect on Scroll*/
-.tweak-fixed-header:not(.sqs-edit-mode-active):not(.sqs-site-styles-active) .header.shrink .header-announcement-bar-wrapper{
-padding:var(--sqs-mobile-site-gutter)!important;}}
+/*Mobile Nav Wraper*/
+.header-menu-nav-wrapper{
+position:static!important;
+display:flex;
+flex-direction:column;
+gap:var(--mobile-nav-gap);}
+
+/*Match main nav to folder*/
+.header-menu-nav-folder-content{
+display:flex!important;
+flex-direction:column!important;
+gap:var(--mobile-nav-gap);
+padding:var(--sqs-mobile-site-gutter);}
+
+/*Mobile Nav Content*/
+.header-menu-nav-folder-content{
+position:relative!important;
+justify-content:center!important;}
 
 /*Mobile Nav Menu Item*/
+.header-menu-nav-item{
+padding:unset;
+width:fit-content!important;
+& a{
+width:fit-content!important;}}
+
+/*Add Margin to "Back" Mobile*/
+.header-menu-controls-control--active{
+margin-bottom:20px!important;}
+
+/*Mobile Nav Item*/
 .header-menu-nav-item a{
-font-family:var(--heading);
-font-weight:400;
-font-size:28px!important;
-letter-spacing:0em;}
+font-weight:var(--mobile-nav-weight)!important;
+font-family: var(--inter), var(--body), sans-serif!important;
+font-feature-settings:
+var(--inter-features);
+font-size:var(--mobile-nav-size);
+letter-spacing:-.01em;
+margin:0px;}
 
-:is([aria-current="page"], [aria-current="true"]) .header-menu-nav-item-content{
-background-image:none;
-background-size:unset;}
+/*Mobile Menu Button*/
+.header-menu-cta a{
+font-weight:var(--mobile-nav-weight)!important;
+font-family: var(--inter), var(--body), sans-serif!important;
+font-feature-settings:
+var(--inter-features);
+font-size:1rem!important;
+padding:14px!important;
+border:1px solid var(--menuOverlayButtonBackgroundColor)!important;}
+.tweak-global-animations-animation-type-flex .header-menu-cta a:before{
+border:none!important;
+border-radius:unset!important;}
 
-/*Mobile Header Icons*/
-.header-actions{
-flex: 0 0 50px!important;}
+/*Mobile Nav Chevron*/
+.chevron{
+border-top:1.5px solid currentColor;
+border-right:1.5px solid currentColor;
+height:8px!important;
+width:8px!important;
+&.chevron--right{
+margin-left:4px;}
+&.chevron--left{
+margin-right:4px;
+margin-left:-6px;}}
 
-/*Cart Icon*/
-.icon--cart{
-padding:3px;}
-
-/*Burger Menu Icon*/
-.burger-box{
-height:25px;
-width:25px;}
-.top-bun, .patty, .bottom-bun{
-border-radius:100px!important;}
-.header--menu-open .header .header-burger .top-bun, .header--menu-open .header .header-burger .patty, .header--menu-open .header .header-burger .bottom-bun{
-width:25px!important;}
+/*Mobile Social Icons*/
+@media screen and (max-width:767px){
+.header-actions-action .icon, .header-menu-actions-action .icon{
+height:1.5rem;
+width:1.5rem;}}
 
 
 
