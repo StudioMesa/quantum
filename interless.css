@@ -144,7 +144,6 @@ p a em {
   line-height: 1.8 !important;
   position: relative;
   font-style: normal;
-  font-weight: var(--body-weight) !important;
 }
 @media screen and (min-width: 767px) {
   p a em:after {
@@ -232,7 +231,7 @@ h3 a strong {
 }
 /*Folder Title Chevron*/
 .header-nav-folder-title:after {
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--arrows) !important;
   z-index: -1 !important;
   position: absolute!important;
   right: 0!important;
@@ -314,8 +313,6 @@ h3 a strong {
 /*Mobile Nav Item*/
 .header-menu-nav-item a {
   font-weight: var(--mobile-nav-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: var(--mobile-nav-size);
   letter-spacing: -0.01em;
   margin: 0px;
@@ -323,8 +320,6 @@ h3 a strong {
 /*Mobile Menu Button*/
 .header-menu-cta a {
   font-weight: var(--mobile-nav-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: 1rem!important;
   padding: 14px!important;
   border: 1px solid var(--menuOverlayButtonBackgroundColor) !important;
@@ -367,9 +362,6 @@ button[type="submit"].form-submit-button,
 .list-item-content__button {
   user-select: none!important;
   overflow: hidden!important;
-  font-weight: var(--button-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   display: flex!important;
   align-items: center!important;
   justify-content: center!important;
@@ -387,9 +379,7 @@ button[type="submit"].form-submit-button:after,
 .course-item__next-lesson-button:after,
 .list-item-content__button:after {
   content: "→";
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--button-weight) !important;
+  font-family: var(--arrows) !important;
   line-height: 0!important;
   margin-left: 4px;
   transform: rotate(0deg);
@@ -465,9 +455,6 @@ button[type="submit"].form-submit-button:after,
 }
 /*Header Buttons*/
 .header-actions .btn {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--button-weight) !important;
   align-items: center;
   justify-content: center;
 }
@@ -497,13 +484,6 @@ button[type="submit"].form-submit-button:after,
 /*Secondary Main*/
 .sqs-button-element--secondary {
   background: transparent!important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-}
-/*Accordion Title*/
-.accordion-item__title {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-weight: var(--heading-weight);
 }
 /*Accordion Item*/
 .accordion-item {
@@ -557,8 +537,6 @@ button[type="submit"].form-submit-button:after,
 }
 /*Field Title*/
 .sqs-block-form .field-list .title {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   position: relative!important;
   width: fit-content !important;
 }
@@ -569,8 +547,6 @@ button[type="submit"].form-submit-button:after,
 .sqs-block-form radio,
 .sqs-block-form checkbox,
 .sqs-block-form .caption-text {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   transition: var(--trans) !important;
   outline-offset: 3px!important;
   outline: 1px solid transparent;
@@ -586,16 +562,12 @@ button[type="submit"].form-submit-button:after,
 .sqs-block-form ::placeholder,
 .sqs-block-form select.show-placeholder,
 .sqs-block-form .form-input-prefix {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   color: var(--tweak-form-block-stroke-color) !important;
   opacity: 1!important;
 }
 /*Replace "reqired" with "*" */
 .form-wrapper .field-list .description.required {
   visibility: hidden;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: 0!important;
 }
 .form-wrapper .field-list .description.required:after {
@@ -605,7 +577,6 @@ button[type="submit"].form-submit-button:after,
   opacity: 0.4;
   right: 0;
   content: '*' !important;
-  font-weight: var(--bold-weight) !important;
   font-size: 12px;
 }
 /*Remove line hover effect*/
@@ -642,7 +613,7 @@ button[type="submit"].form-submit-button:after,
   font-size: 26px;
   content: "×";
   margin-bottom: 3px!important;
-  font-family: var(--inter) !important;
+  font-family: var(--arrows) !important;
 }
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .lightbox-close:hover {
   transition: var(--trans) !important;
