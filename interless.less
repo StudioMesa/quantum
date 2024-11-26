@@ -135,8 +135,7 @@ transition:var(--trans)!important;}
 p a em{
 line-height:1.8!important;
 position: relative;
-font-style:normal;
-font-weight:var(--body-weight)!important;}
+font-style:normal;}
 @media screen and (min-width:767px){
 p a em:after{
 font-family: var(--arrows)!important;
@@ -220,7 +219,7 @@ padding-right:14px!important;}
 
 /*Folder Title Chevron*/
 .header-nav-folder-title:after{
-font-family: var(--inter), var(--body), sans-serif!important;
+font-family: var(--arrows)!important;
 z-index:-1!important;
 position:absolute!important;
 right:0!important;
@@ -303,9 +302,6 @@ margin-bottom:20px!important;}
 /*Mobile Nav Item*/
 .header-menu-nav-item a{
 font-weight:var(--mobile-nav-weight)!important;
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 font-size:var(--mobile-nav-size);
 letter-spacing:-.01em;
 margin:0px;}
@@ -313,9 +309,6 @@ margin:0px;}
 /*Mobile Menu Button*/
 .header-menu-cta a{
 font-weight:var(--mobile-nav-weight)!important;
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 font-size:1rem!important;
 padding:14px!important;
 border:1px solid var(--menuOverlayButtonBackgroundColor)!important;}
@@ -348,10 +341,6 @@ width:1.5rem;}}
 .sqs-block-button-element--small, .sqs-block-button-element--medium, .sqs-block-button-element--large, .header-actions .btn, .header-menu-cta a, button[type="submit"].form-submit-button, .join-button, .course-item__next-lesson-button, .list-item-content__button{
 user-select:none!important;
 overflow:hidden!important;
-font-weight:var(--button-weight)!important;
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 display:flex!important;
 align-items:center!important;
 justify-content:center!important;
@@ -361,10 +350,7 @@ transition:var(--trans)!important;}
 /*Button Arrows*/
 .sqs-block-button-element--small:after, .sqs-block-button-element--medium:after, .sqs-blo.form-submit-buttonck-button-element--large:after, .header-actions .btn:after, .header-menu .header-menu-cta a:after, button[type="submit"].form-submit-button:after, .join-button:after, .course-item__next-lesson-button:after, .list-item-content__button:after{
 content:"→";
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
-font-weight:var(--button-weight)!important;
+font-family: var(--arrows)!important;
 line-height:0!important;
 margin-left:4px;
 transform:rotate(0deg);
@@ -378,10 +364,6 @@ transition:transform .3s ease;}}
 
 /*Header Buttons*/
 .header-actions .btn{
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
-font-weight:var(--button-weight)!important;
 align-items:center;
 justify-content:center;}
 
@@ -408,18 +390,11 @@ margin-left:auto!important;}
 //---SECONDARY BUTTON---//
 /*Secondary Main*/
 .sqs-button-element--secondary{
-background:transparent!important;
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);}
+background:transparent!important;}
 
 
 
 //---ACCORDION---//
-/*Accordion Title*/
-.accordion-item__title{
-font-family: var(--inter), var(--body), sans-serif!important;
-font-weight:var(--heading-weight);}
 
 /*Accordion Item*/
 .accordion-item{
@@ -470,36 +445,24 @@ padding: 50px var(--sqs-mobile-site-gutter)!important;}}
 
 /*Field Title*/
 .sqs-block-form .field-list .title{
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 position:relative!important;
 width:fit-content!important;}
 
 /*Field Text / Focus Adjustment*/
 .sqs-block-form{
 input, select, textarea, radio, checkbox, .caption-text{
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 transition:var(--trans)!important;
 outline-offset: 3px!important;
 outline:1px solid transparent;
 &:focus{
 outline:1px solid var(--tweak-form-block-stroke-color);}}
 ::placeholder, select.show-placeholder, .form-input-prefix{
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 color:var(--tweak-form-block-stroke-color)!important;
 opacity:1!important;}}
 
 /*Replace "reqired" with "*" */
 .form-wrapper .field-list .description.required{
 visibility: hidden; 
-font-family: var(--inter), var(--body), sans-serif!important;
-font-feature-settings:
-var(--inter-features);
 font-size:0!important;
 &:after{
 visibility: visible; 
@@ -508,7 +471,6 @@ top:4px;
 opacity:.4;
 right:0;
 content:'*'!important;
-font-weight:var(--bold-weight)!important;
 font-size:12px;}}
 
 /*Remove line hover effect*/
@@ -537,7 +499,7 @@ font-weight:300!important;
 font-size:26px;
 content:"×";
 margin-bottom:3px!important;
-font-family:var(--inter)!important;}
+font-family: var(--arrows)!important;}
 height:20px;
 width:20px;
 display:flex;
