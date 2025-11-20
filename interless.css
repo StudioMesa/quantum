@@ -224,10 +224,14 @@ h3 a strong {
     margin: 0 auto;
   }
 }
+/*Remove nav item default padding*/
+.header .header-nav-wrapper a,
+.header .language-item a {
+  padding: unset!important;
+}
 /*Folder Title*/
 .header-nav-folder-title {
   position: relative!important;
-  padding-right: 14px!important;
 }
 /*Folder Icon Transition*/
 .header-nav-item--folder .header-dropdown-flip svg,
