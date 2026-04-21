@@ -1,4 +1,4 @@
-/*Quantum CSS — Updated 11/20/2025*/
+/*Quantum CSS — Updated 04/20/2026*/
 /*Borders*/
 html {
   --c-border: 1px solid currentColor;
@@ -1199,18 +1199,21 @@ section.vertical-alignment--bottom .content-wrapper {
 }
 /*Full Screen ("1" Custom Fill + Vertical Alignment)*/
 @media screen and (min-width: 767px) {
-  section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top {
+  section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top,
+  section[data-current-styles*='"customSectionHeight":1'].vertical-alignment--top {
     min-height: 100vh!important;
     max-height: 100vh!important;
     overflow: hidden!important;
   }
-  section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .image-block {
+  section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .image-block,
+  section[data-current-styles*='"customSectionHeight":1'].vertical-alignment--top .image-block {
     min-height: 100vh!important;
     max-height: 100vh!important;
     height: 100vh!important;
   }
 }
-section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .content-wrapper {
+section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .content-wrapper,
+section[data-current-styles*='"customSectionHeight":1'].vertical-alignment--top .content-wrapper {
   padding-top: 0!important;
   padding-bottom: 0!important;
 }
